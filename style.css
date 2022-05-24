@@ -1,0 +1,22 @@
+
+canvas {
+    border: 1px solid black;
+    background-color: aliceblue;
+    position: absolute;
+    top: 100px;
+}
+#btns{
+    position: absolute;
+   top: 705px;
+}
+
+#txt{
+  
+    background-color: aliceblue;
+    z-index: 1;
+    width: 800px;
+    height: 90px;
+    position: absolute;
+    top: 7px;
+    left: 7px;
+}
