@@ -16,6 +16,7 @@ class Ballon {
   constructor(word) {
     this.word = word;
     this.color = ballons.sapwnBallon;
+    this.ballonColor = "#FFEF82";
 
     //balongen storlek ska anpassas till oredet storlek
     this.radius = this.word.length * 12;
@@ -46,7 +47,7 @@ class Ballon {
     //  ctx.arcTo(-1000,0,0,10,10)
     ctx.moveTo(150, 150);
     //  ctx.lineTo(100,100)
-    ctx.fillStyle = "yellow";
+    ctx.fillStyle = this.ballonColor;
 
     ctx.stroke();
     ctx.fill();
@@ -210,6 +211,7 @@ function renderBallons() {
 function checkBallonMatch(text) {
   ballons.forEach((ballon) => {
     if (ballon.word === text && text !== "") {
+      ballon.ballonColor = "#83BD75";
       score++;
       ballon.word = "";
       ballon.vy = -8;
