@@ -9,9 +9,6 @@ const stopButton = document.querySelector("#stop");
 
 //___________________________________________________________________________________________________________________________
 
-/* klasser för att skapa objekt
------------------------- */
-
 class Ballon {
   constructor(word) {
     this.word = word;
@@ -144,11 +141,28 @@ function getRandomBetween(min, max) {
 }
 
 // ord array i spelet
-var words = ["grön", "glad", "vår"];
-//  "sol", "sommar", "simma",
-//     "leka", "läsa", "äta", "köra", "dricka", "röd", "svart",
-//     "vit", "blå", "grå", "gul", "pink", "brun", "rosa"
-// ];
+var words = [
+  "grön",
+  "glad",
+  "vår",
+  "sol",
+  "sommar",
+  "simma",
+  "leka",
+  "läsa",
+  "äta",
+  "köra",
+  "dricka",
+  "röd",
+  "svart",
+  "vit",
+  "blå",
+  "grå",
+  "gul",
+  "pink",
+  "brun",
+  "rosa",
+];
 
 //för att orden ska komma slumpmässigt ->
 function shuffleArray(array) {
